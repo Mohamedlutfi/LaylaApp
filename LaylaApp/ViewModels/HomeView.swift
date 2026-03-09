@@ -11,7 +11,6 @@ struct HomeView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 24) {
                         
-                        // Trending sektion
                         Text("🔥 Trending")
                             .font(.title2.bold())
                             .foregroundColor(.white)
@@ -28,7 +27,6 @@ struct HomeView: View {
                             .padding(.horizontal)
                         }
                         
-                        // Top Rated sektion
                         Text("⭐ Top Rated")
                             .font(.title2.bold())
                             .foregroundColor(.white)
