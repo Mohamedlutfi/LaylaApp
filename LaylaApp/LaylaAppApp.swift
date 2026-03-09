@@ -8,8 +8,10 @@
 import SwiftUI
 import SwiftData
 
+
 @main
 struct LaylaAppApp: App {
+    var hello = "hello"
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
             Item.self,
