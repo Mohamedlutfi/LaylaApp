@@ -8,27 +8,22 @@
 import SwiftUI
 import SwiftData
 
-
 @main
-struct LaylaAppApp: App {
-    var hello = "hello"
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+struct LaylaApp: App {
+    let container: ModelContainer
+    
+    init() {
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            container = try ModelContainer(for: SavedMovie.self, WatchList.self)
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
         }
-    }()
-
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(container)
         }
-        .modelContainer(sharedModelContainer)
     }
 }

@@ -1,13 +1,12 @@
 //
-//  LaylaAppUITests.swift
-//  LaylaAppUITests
+//  
 //
-//  Created by Mohamed Lutfi Mohamed on 2026-03-09.
+//
 //
 
 import XCTest
 
-final class LaylaAppUITests: XCTestCase {
+final class LaylaUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

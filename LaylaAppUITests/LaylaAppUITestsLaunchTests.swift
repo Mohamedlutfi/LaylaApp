@@ -1,13 +1,13 @@
 //
-//  LaylaAppUITestsLaunchTests.swift
-//  LaylaAppUITests
+//  
 //
-//  Created by Mohamed Lutfi Mohamed on 2026-03-09.
+//
+//
 //
 
 import XCTest
 
-final class LaylaAppUITestsLaunchTests: XCTestCase {
+final class LaylaUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
