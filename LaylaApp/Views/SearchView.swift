@@ -67,4 +67,3 @@ struct SearchView: View {
     SearchView()
         .preferredColorScheme(.dark)
 }
-

@@ -1,15 +1,8 @@
-//
-//  LaylaAppApp.swift
-//  LaylaApp
-//
-//  Created by Mohamed Lutfi Mohamed on 2026-03-09.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
-struct LaylaApp: App {
+struct LaylaAppApps: App {
     let container: ModelContainer
     
     init() {

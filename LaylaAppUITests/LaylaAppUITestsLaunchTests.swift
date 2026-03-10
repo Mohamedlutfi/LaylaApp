@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class LaylaUITestsLaunchTests: XCTestCase {
+final class LaylaAppUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
