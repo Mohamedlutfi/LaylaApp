@@ -11,6 +11,7 @@ struct HomeView: View {
                 ScrollView {
                     VStack(alignment: .leading, spacing: 24) {
                         
+                        // Trending sektion
                         Text("🔥 Trending")
                             .font(.title2.bold())
                             .foregroundColor(.white)
@@ -27,6 +28,7 @@ struct HomeView: View {
                             .padding(.horizontal)
                         }
                         
+                        // Top Rated sektion
                         Text("⭐ Top Rated")
                             .font(.title2.bold())
                             .foregroundColor(.white)
@@ -46,8 +48,13 @@ struct HomeView: View {
                     .padding(.vertical)
                 }
             }
-            .navigationTitle("Layla 🌙")
-            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Layla 🌙")
+                        .font(.largeTitle.bold())
+                        .foregroundColor(.white)
+                }
+            }
             .toolbarColorScheme(.dark, for: .navigationBar)
             .task {
                 await viewModel.loadMovies()
@@ -61,6 +68,7 @@ struct HomeView: View {
         }
     }
 }
+
 #Preview {
     HomeView()
 }

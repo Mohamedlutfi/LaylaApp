@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct LaylaAppApps: App {
+struct LaylaAppApp: App {
     let container: ModelContainer
     
     init() {
